@@ -34,7 +34,8 @@ namespace HPHP
         ObjectData* ret = ObjectData::newInstance(cls);
         if(init){
             TypedValue dummy;
-            g_context->invokeFunc(&dummy, cls->getCtor(), arg, ret);
+            //g_context->invokeFunc(&dummy, cls->getCtor(), arg, ret);
+            g_context->invokeFunc(cls->getCtor(), arg, ret);
         }
         return ret;
     }

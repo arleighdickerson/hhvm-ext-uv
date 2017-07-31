@@ -2,9 +2,9 @@
 #define HHVM_INCLUDE_H
 
 #include "../config.h"
-#if HHVM_API_VERSION < 20150212
-    #error hhvm version must >= 3.6.0
-#endif
+//#if HHVM_API_VERSION < 20150212
+    //#error hhvm version must >= 3.6.0
+//#endif
 
 #include "hphp/runtime/ext/extension.h"
 #include "hphp/runtime/base/socket.h"
